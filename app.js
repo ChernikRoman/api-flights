@@ -1,6 +1,9 @@
 const express = require('express');
+const { corsHandler } = require('./middlewares/cors');
 
 const app = express();
+
+app.use(corsHandler);
 
 app.get('/flights', (req, res) => {
     try {
