@@ -14,6 +14,14 @@ app.get('/flights', (req, res) => {
     }
 })
 
+app.get('/safari', (req, res) => {
+    try {
+        res.status(200).send({safari: 'work'});
+    } catch {
+        res.status(500).send('Error');
+    }
+})
+
 app.use((req, res) => {
     res.send('Path not found')
 })
