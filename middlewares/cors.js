@@ -1,6 +1,7 @@
 function corsHandler(req, res, next) {
   const allowedOrigin = [
     'https://flights-three.vercel.app',
+    'http://flights-three.vercel.app',
     'http://localhost:3000',
     'http://localhost:3001',
   ];
