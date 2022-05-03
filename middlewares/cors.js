@@ -1,5 +1,4 @@
 function corsHandler(req, res, next) {
-  const allowedOrigin = [
 
   const allowedMethods = 'GET,PUT,HEAD,PATCH,DELETE,POST';
   const allowedHeaders = req.headers['access-control-request-headers'];
